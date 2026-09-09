@@ -146,6 +146,7 @@ body::selection { background: var(--sage); color: var(--violet); }
     width: min(360px, 100%);
     aspect-ratio: 1;
     object-fit: cover;
+    object-position: center 18%;
     border: 1px solid var(--line);
     border-radius: 50%;
     background: linear-gradient(145deg, rgba(184, 205, 181, 0.18), rgba(48, 32, 65, 0.7));
