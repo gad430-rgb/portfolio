@@ -140,20 +140,18 @@ body::selection { background: var(--sage); color: var(--violet); }
 }
 .social-icon:hover { border-color: var(--sage); background: var(--sage); color: var(--violet); transform: translateY(-3px); }
 .hero-image { display: flex; justify-content: center; }
-.image-placeholder {
+.profile-photo {
     position: relative;
-    display: grid;
+    display: block;
     width: min(360px, 100%);
     aspect-ratio: 1;
-    place-items: center;
+    object-fit: cover;
     border: 1px solid var(--line);
     border-radius: 50%;
     background: linear-gradient(145deg, rgba(184, 205, 181, 0.18), rgba(48, 32, 65, 0.7));
-    color: var(--sage);
-    font-size: 7rem;
     box-shadow: 18px 18px 0 rgba(184, 205, 181, 0.08);
 }
-.image-placeholder::before { position: absolute; inset: 17px; border: 1px dashed rgba(216, 232, 211, 0.3); border-radius: 50%; content: ''; }
+.profile-photo::before { position: absolute; inset: 17px; border: 1px dashed rgba(216, 232, 211, 0.3); border-radius: 50%; content: ''; }
 
 .about, .skills { background: var(--surface); }
 .about, .projects, .skills, .contact { padding: 7rem 0; }
